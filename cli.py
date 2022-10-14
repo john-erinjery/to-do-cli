@@ -1,5 +1,6 @@
 import sys
 import os
+from termcolor import colored
 from docs import help
 args = sys.argv
 
@@ -15,4 +16,4 @@ else:
             help(args[2])
 
         else:
-            print('\nERROR : Too many arguments passed.')
+            print(colored('\nERROR : Too many arguments passed.'))

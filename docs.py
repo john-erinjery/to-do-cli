@@ -1,6 +1,6 @@
 import os
 import sys
-
+from termcolor import colored
 availiable_commands = ['create', 'list', 'delete', 'done', 'modify']
 # Help Functions
 
@@ -28,11 +28,12 @@ modify    modify task details
 ''')
 
     elif param not in availiable_commands:
-        print('\nWARN todo help : no such command {0}'.format(param))
+        print(colored('\nWARN todo help : no such command {0}'.format(param), 'red'))
         
     else:
         if param == 'create':
-            pass
+            print('''
+            ''')
         elif param == 'list':
             pass
         elif param == 'done':
