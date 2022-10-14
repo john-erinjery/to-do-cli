@@ -3,7 +3,6 @@ Project Details:
 - simple and easy to use inteface
 - ex cmd : todo list (--pending, --done, --all)
            todo create -n "Take out the Trash" -d 23 Oct 2020 -t 2.00 pm -doc "Take out the trash at the time" -id tott
-           todo delete -id tott
+           todo delete -id tott (--all, --done, --pending)
            todo done -id tott
            todo modify -id tott <opts>
-           todo clear (--all, --done, --pending)

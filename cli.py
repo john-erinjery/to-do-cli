@@ -3,8 +3,16 @@ import os
 from docs import help
 args = sys.argv
 
-if args:
+if len(args) == 1:
     help()
 
-elif args[1] == '':
-    pass
+else:
+    if args[1] in ('help', '-h'):
+        if len(args) == 2:
+            help()
+
+        elif len(args) == 3:
+            help(args[2])
+
+        else:
+            print('\nERROR : Too many arguments passed.')
