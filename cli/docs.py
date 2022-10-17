@@ -53,7 +53,7 @@ Options:
     -det, --details         Further details on the task.
     -o, --output
 {4}
-            '''.format(colored('todo create \'Do the Dishes\'', 'green'), colored('Usage : todo create <task> [<options>]', attrs=['bold']),\
+            '''.format(colored('todo create -n \'Do the Dishes\'', 'green'), colored('Usage : todo create <task> [<options>]', attrs=['bold']),\
                 colored('(eg : -d 23 Oct 2020)', attrs=['dark']), colored('(eg : -t 2.00 pm)', attrs=['dark']),\
                 colored('e.g: todo create -n "Take out the Trash" -d 23-10-2020 -t 2.00 pm -det "Take out the trash at 2, Dad said." -id 1', attrs=['dark'])))
 
@@ -75,7 +75,7 @@ def _config_dictionary() -> dict:
 
     This functions checks the .config directory at 'C:/Users/USERNAME/.config' for 'todo.json' file.
     If the file is not present, it will return the default configurations.
-    If the file is present it will return the updated version of the default config file
+    If the file is present it will return the updated version of the default config file.
     '''
     config_dir_path = 'C:/Users/{}/.config'.format(os.getenv('USERNAME'))
     config_file_path = config_dir_path + '/todo.json'
