@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+# john-erinjery project files
+tests.py
+doc.txt
 
 # C extensions
 *.so
